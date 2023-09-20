@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Address Autocomplete</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjFk2T7mvWzqbL9FVQWEabiCVlOFHtEgY&libraries=places"></script>
+  <script>
+    function initAutocomplete() {
+      var input = document.getElementById('autocomplete');
+      var autocomplete = new google.maps.places.Autocomplete(input);
+    }
+  </script>
+</head>
+<body onload="initAutocomplete()">
+  <h1>Address Autocomplete Demo</h1>
+  <input id="autocomplete" type="text" placeholder="Enter your address">
+</body>
+</html>
